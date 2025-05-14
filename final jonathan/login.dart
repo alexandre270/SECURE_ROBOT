@@ -28,10 +28,10 @@ class _LoginPageState extends State<LoginPage> {
       print(" Initialisation démarrée");
 
       final uuid = await _getOrCreateUUID();
-      print("🆔 UUID récupéré : $uuid");
+      print(" UUID récupéré : $uuid");
 
       final deviceID = await _getDeviceID();
-      print("📱 Device ID : $deviceID");
+      print(" Device ID : $deviceID");
 
       setState(() {
         _uuid = uuid;
