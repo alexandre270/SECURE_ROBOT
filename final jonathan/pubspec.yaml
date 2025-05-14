@@ -1,0 +1,41 @@
+name: projet
+
+# La description de votre projet
+description: "A new Flutter project."
+
+# Optionnel : si vous souhaitez publier ce projet sur pub.dev, vous pouvez enlever ce commentaire
+publish_to: 'none'  # Retirer cette ligne si vous souhaitez publier sur pub.dev
+
+# La version de votre projet et le numéro de build
+version: 1.0.0+1
+
+# Définition de la version minimale du SDK Flutter nécessaire pour ce projet
+environment:
+  sdk: ^3.7.2  # Utilisation d'une version compatible avec Flutter 3.7.2 ou plus récent
+
+# Liste des dépendances nécessaires pour ce projet
+dependencies:
+  flutter:
+    sdk: flutter  # Le SDK Flutter, obligatoire pour tout projet Flutter
+  http: ^1.3.0  # Package pour effectuer des requêtes HTTP
+  cupertino_icons: ^1.0.8  # Icones d'interface utilisateur à la manière de iOS
+  flutter_joystick: ^0.2.1  # Permet de créer un joystick virtuel pour les applications de jeux ou d'interactions
+  video_player: ^2.2.10  # Package permettant d'intégrer un lecteur vidéo dans l'application
+  chewie: ^1.3.0  # Un widget pour améliorer l'expérience du lecteur vidéo Flutter
+  device_info_plus: ^10.0.0
+  uuid: ^4.0.0
+  shared_preferences: ^2.2.2
+
+# Liste des dépendances de développement, uniquement nécessaires pendant le développement et les tests
+dev_dependencies:
+  flutter_test:
+    sdk: flutter  # Package pour effectuer des tests unitaires et des tests d'interface utilisateur Flutter
+  flutter_lints: ^5.0.0  # Fournit des règles de linting pour garder le code propre et bien structuré
+
+# Configuration de l'application Flutter
+flutter:
+  uses-material-design: true  # Active l'utilisation du design Material (composants UI)
+
+  # Définition des ressources de l'application, ici les images qui seront utilisées dans le projet
+  assets:
+    - assets/images/  # Dossier contenant les images utilisées dans l'application
